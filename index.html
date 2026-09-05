@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Episode Link</title>
+</head>
+<body>
+  <a href="#" onclick="playRandomEpisode()">Play Random Episode</a>
+
+  <script>
+    function playRandomEpisode() {
+      // Add episode URLs here
+      const episodes = [
+        "https://www.topcartoons.tv/serie/episode1",
+        "https://www.topcartoons.tv/serie/episode2",
+        "https://www.topcartoons.tv/serie/episode3",
+        "https://www.topcartoons.tv/serie/episode4"
+      ];
+
+      // Pick a random one
+      const randomIndex = Math.floor(Math.random() * episodes.length);
+      const randomEpisode = episodes[randomIndex];
+
+      // Redirect to it
+      window.location.href = randomEpisode;
+    }
+  </script>
+</body>
+</html>
